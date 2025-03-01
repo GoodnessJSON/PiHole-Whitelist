@@ -42,11 +42,11 @@
 </div>
 <div align="center">
   
-This is a fork of the [original anudeepND Whitelist](https://github.com/GoodnessJSON/PiHole-Whitelist). It's designed to be an up to date whitelist for us with PiHole V6. 
+This is a fork of the original [anudeepND Whitelist](https://github.com/GoodnessJSON/PiHole-Whitelist). It's designed to be an open-source community whitelist for use with PiHole V6. 
 
-To keep this list as up to date as possible, PRs and Domain suggestions are welcome. Please see below.
+To keep this list as up to date as possible, PRs and domain suggestions are welcome. Please see below for info.
 
-Want to report a new domain? Want to report existing one? Feel free to file an [issue](https://github.com/GoodnessJSON/PiHole-Whitelist/issues).
+Want to report a new domain? Want to report an existing one? Feel free to file an [issue](https://github.com/GoodnessJSON/PiHole-Whitelist/issues).
 
 </div>
 
@@ -77,28 +77,51 @@ Want to report a new domain? Want to report existing one? Feel free to file an [
 
 - The entire repo is curated.
 - New domains are added frequently.
-- Supports Pi-Hole Docker installation.
-- Comes with a simple install/uninstall scripts i.e. you can add all domains with comments automatically at an instant.
+- Can be easily imported as an 'allow list' with PiHole V6.
 - Domains are categorized and are included in 3 different files.
 - All the domains will have comments to let you know about the domain.
-- If you are a beginner to Pi-Hole, adding these sites will solve issues with host files that block legit websites.
+- If you are a beginner to Pi-Hole, adding these sites will solve issues with host files that block legitimate websites.
 
 ## <ins>Overview</ins>
   <br />
 
 | File Name | Domain Count | Description | Update Frequency | Raw Link |
 |:-:|:-:|:-:|:-:|:-:|
-| whitelist.txt | 191 | This file contain domains that are __safe__ to whitelist i.e. it does not contain any tracking or advertising sites. Adding this file fixes many problems like YouTube watch history, videos on news sites and so on. If you want to report additional domain feel free to file an [issue](https://github.com/GoodnessJSON/PiHole-Whitelist/issues). | Occasionally | [link](https://raw.githubusercontent.com/GoodnessJSON/PiHole-Whitelist/master/domains/whitelist.txt) |
-| referral-sites.txt | 75 | People who use services like Slickdeals and Fatwallet needs a few sites (most of  them are either trackers or ads) to be whitelisted to work properly. This file contains some analytics and ad serving sites like __doubleclick.net__ and others. __If you don't know what these services are, stay away from this list.__ | Occasionally | [link](https://raw.githubusercontent.com/GoodnessJSON/PiHole-Whitelist/master/domains/referral-sites.txt) |
-| optional-list.txt | -- | This file contain domains that are needed to be whitelisted depending on the service you use. It may contain some tracking site but sometimes it's necessary to add bad domains to make a few services to work. Currently there is no script for this list, you have to add domains manually to your Pi-Hole. | Occasionally | [link](https://raw.githubusercontent.com/GoodnessJSON/PiHole-Whitelist/master/domains/optional-list.txt) |
+| whitelist.txt | 191 | This file contain domains that are __safe__ to whitelist i.e. it does not contain any tracking or advertising sites. Adding this file fixes many problems like YouTube watch history, videos on news sites and so on. If you want to report additional domain feel free to file an [issue](https://github.com/GoodnessJSON/PiHole-Whitelist/issues). | Occasionally | [link](https://raw.githubusercontent.com/GoodnessJSON/PiHole-Whitelist/master/lists/whitelist.txt) |
+| referral-sites.txt | 75 | People who use services like Slickdeals and Fatwallet needs a few sites (most of  them are either trackers or ads) to be whitelisted to work properly. This file contains some analytics and ad serving sites like __doubleclick.net__ and others. __If you don't know what these services are, stay away from this list.__ | Occasionally | [link](https://raw.githubusercontent.com/GoodnessJSON/PiHole-Whitelist/master/lists/referral-sites.txt) |
+| optional-list.txt | -- | This file contain domains that are needed to be whitelisted depending on the service you use. It may contain some tracking site but sometimes it's necessary to add bad domains to make a few services to work. Currently there is no script for this list, you have to add domains manually to your Pi-Hole. | Occasionally | [link](https://raw.githubusercontent.com/GoodnessJSON/PiHole-Whitelist/master/lists/optional-list.txt) |
 
 ## <ins>How do I determine an ad domain?</ins>
+- __Using PiHole:__ <a href="https://discourse.pi-hole.net/t/how-do-i-determine-what-domain-an-ad-is-coming-from/1522">Follow the official PiHole instructions</a> for identifying a problematic domain.
 - __Adam:ONE Assistant (formerly DNSthingy Assistant):__ <a href="https://chrome.google.com/webstore/detail/adamone-assistant/fdmpekabnlekabjlimjkfmdjajnddgpc">This browser extension</a> will list all of the domains that are queried when a web page is loaded. You can often look at the list of domains and cherry pick the ones that appear to be ad-serving domains.
 - __Using inbuilt Developer tool:__ For Chrome and Firefox, __`ctrl+shift+I`__ will land you in Developer tools menu.
 - __Using an Android app:__ [__`Net Guard`__](https://play.google.com/store/apps/details?id=eu.faircode.netguard) is an Android app that can be used to monitor any specific apps, works on unrooted devices too.
 
 
 ## <ins>License</ins>
+
+```Text
+MIT License - This repository
+
+Copyright (c) 2025
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 ```Text
 MIT License - Original Fork
