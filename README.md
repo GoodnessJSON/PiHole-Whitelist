@@ -66,6 +66,7 @@ Want to report a new domain? Want to report an existing one? Feel free to file a
 
 ## <ins>Table of contents</ins>
 - [Features](#features)
+- [Installation](#features)
 - [Overview](#overview)
 - [How do I determine an ad domain?](#how-do-i-determine-an-ad-domain)
 - [License ](#license)
@@ -78,6 +79,14 @@ Want to report a new domain? Want to report an existing one? Feel free to file a
 - Domains are categorized and are included in 3 different files.
 - All the domains will have comments to let you know about the domain.
 - If you are a beginner to Pi-Hole, adding these sites will solve issues with host files that block legitimate websites.
+
+## <ins>Installation (PiHole v6)</ins>
+
+1. Open your PiHole Instance
+2. Click on Lists
+3. Enter in the link to the correct Whitelist (see below) into the Address box
+4. Click 'Add Allowlist'
+4. Update Gravity
 
 ## <ins>Overview</ins>
   <br />
