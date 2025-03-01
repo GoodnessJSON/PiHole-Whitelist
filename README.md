@@ -66,7 +66,7 @@ Want to report a new domain? Want to report an existing one? Feel free to file a
 
 ## <ins>Table of contents</ins>
 - [Features](#features)
-- [Installation](#features)
+- [Installation](#installation-pihole-v6)
 - [Overview](#overview)
 - [How do I determine an ad domain?](#how-do-i-determine-an-ad-domain)
 - [License ](#license)
