@@ -1,5 +1,5 @@
 <div align="center">  
-  <img width="550" alt="Whitelist logo" src="https://raw.githubusercontent.com/GoodnessJSON/PiHole-Whitelist/master/images/logo.png">
+  <img width="550" alt="Whitelist logo" src="https://raw.githubusercontent.com/GoodnessJSON/PiHole-Whitelist/master/images/logo_new.png">
 </div>
 
 <br />
