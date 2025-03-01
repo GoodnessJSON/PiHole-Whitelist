@@ -6,9 +6,6 @@
 
 
 <div align="center">
-   <a href="#" > 
-    <img src="https://img.shields.io/badge/Python-v3-9cf" alt="repo size" >
-  <a/>
   <a href="#" > 
     <img src="https://img.shields.io/github/repo-size/GoodnessJSON/PiHole-Whitelist?label=Repo%20Size&color=orange" alt="repo size" >
   <a/>
