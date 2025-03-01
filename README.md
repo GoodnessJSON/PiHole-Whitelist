@@ -42,7 +42,9 @@
 </div>
 <div align="center">
   
-This is a fork of the [original anudeepND Whitelist](https://github.com/GoodnessJSON/PiHole-Whitelist). It's designed to be easy to submit to with PRs for relevance and updated availability. 
+This is a fork of the [original anudeepND Whitelist](https://github.com/GoodnessJSON/PiHole-Whitelist). It's designed to be an up to date whitelist for us with PiHole V6. 
+
+To keep this list as up to date as possible, PRs and Domain suggestions are welcome. Please see below.
 
 Want to report a new domain? Want to report existing one? Feel free to file an [issue](https://github.com/GoodnessJSON/PiHole-Whitelist/issues).
 
@@ -52,10 +54,6 @@ Want to report a new domain? Want to report existing one? Feel free to file an [
   <h3>
     <a href="https://github.com/GoodnessJSON/PiHole-Whitelist/releases">
       Releases
-    </a>
-    <span> | </span>
-    <a href="https://github.com/GoodnessJSON/PiHole-Whitelist/pulse/monthly">
-      Pulse
     </a>
     <span> | </span>
     <a href="https://github.com/GoodnessJSON/PiHole-Whitelist/issues">
@@ -73,8 +71,6 @@ Want to report a new domain? Want to report existing one? Feel free to file an [
 - [Features](#features)
 - [Overview](#overview)
 - [How do I determine an ad domain?](#how-do-i-determine-an-ad-domain)
-- [Stargazers over time ](#stargazers-over-time)
-- [Support](#support)
 - [License ](#license)
 
 ## <ins>Features</ins>
