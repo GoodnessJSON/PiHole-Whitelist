@@ -41,7 +41,7 @@
   
 This is a fork of the original [anudeepND Whitelist](https://github.com/GoodnessJSON/PiHole-Whitelist). It's designed to be an open-source community whitelist for use with PiHole V6. 
 
-To keep this list as up to date as possible, PRs and domain suggestions are welcome. Please see below for info.
+To keep this list as up to date as possible, PRs and domain suggestions are welcome and will try and be quickly resolved. Please see below for info.
 
 Want to report a new domain? Want to report an existing one? Feel free to file an [issue](https://github.com/GoodnessJSON/PiHole-Whitelist/issues).
 
