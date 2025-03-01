@@ -1,3 +1,8 @@
+# Contributed GoodnessJSON (https://github.com/GoodnessJSON)
+# Project home page: https://github.com/GoodnessJSON/PiHole-Whitelist
+# Forked from (with all thanks to AnudeepND): https://github.com/anudeepND/whitelist
+# Licence: https://github.com/GoodnessJSON/PiHole-Whitelist/blob/master/LICENSE
+
 0.client-channel.google.com
 1drv.com
 2.android.pool.ntp.org

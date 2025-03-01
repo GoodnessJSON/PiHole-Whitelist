@@ -1,6 +1,7 @@
-# Contributed by Anudeep <anudeep@protonmail.com>
-# Project home page: https://github.com/anudeepND/whitelist
-# Licence: https://github.com/anudeepND/whitelist/blob/master/LICENSE
+# Contributed GoodnessJSON (https://github.com/GoodnessJSON)
+# Project home page: https://github.com/GoodnessJSON/PiHole-Whitelist
+# Forked from (with thanks to AnudeepND): https://github.com/anudeepND/whitelist
+# Licence: https://github.com/GoodnessJSON/PiHole-Whitelist/blob/master/LICENSE
 
 # Adult Swim Videos on Amazon Firestick
 pmd.cdn.turner.com
