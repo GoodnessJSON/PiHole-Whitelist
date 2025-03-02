@@ -1,5 +1,5 @@
 <div align="center">  
-  <img width="550" alt="Whitelist logo" src="https://raw.githubusercontent.com/GoodnessJSON/PiHole-Whitelist/master/images/logo_new2.png">
+  <img width="550" alt="Whitelist logo" src="https://raw.githubusercontent.com/GoodnessJSON/PiHole-Whitelist/master/images/logo_new3.png">
 </div>
 
 <br />
@@ -77,7 +77,7 @@ Want to report a new domain? Want to report an existing one? Feel free to file a
 - New domains are added frequently.
 - Can be easily imported as an 'allow list' with PiHole V6.
 - Domains are categorized and are included in 3 different files.
-- All the domains will have comments to let you know about the domain.
+- Domains are categorised to explain why they have been whitelisted.
 - If you are a beginner to Pi-Hole, adding these sites will solve issues with host files that block legitimate websites.
 
 ## <ins>Installation (PiHole v6)</ins>
@@ -128,7 +128,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```
 
+```Text
 MIT License - Original Fork
 
 Copyright (c) 2020 Anudeep ND <anudeep@protonmail.com>
