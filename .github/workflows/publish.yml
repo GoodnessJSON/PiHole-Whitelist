@@ -1,0 +1,57 @@
+name: Update README with List Counts
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Count Lines in List Files
+        id: count_lines
+        run: |
+          count_lines() {
+            file=$1
+            count=$(grep -E -v '^(#|$)' "$file" | wc -l | tr -d ' ')
+            echo "$count"
+          }
+
+          OPTIONAL_COUNT=$(count_lines lists/optional-list.txt)
+          REFERRAL_COUNT=$(count_lines lists/referral-sites.txt)
+          WHITELIST_COUNT=$(count_lines lists/whitelist.txt)
+
+          echo "OPTIONAL_COUNT=$OPTIONAL_COUNT" >> $GITHUB_ENV
+          echo "REFERRAL_COUNT=$REFERRAL_COUNT" >> $GITHUB_ENV
+          echo "WHITELIST_COUNT=$WHITELIST_COUNT" >> $GITHUB_ENV
+
+      - name: Update README
+        run: |
+          awk -v opt_count="$OPTIONAL_COUNT" \
+              -v ref_count="$REFERRAL_COUNT" \
+              -v white_count="$WHITELIST_COUNT" \
+              '{ sub("<!-- OPTIONAL_LIST_COUNT -->", "<!-- OPTIONAL_LIST_COUNT -->\n" opt_count); \
+                 sub("<!-- REFERRAL_SITES_COUNT -->", "<!-- REFERRAL_SITES_COUNT -->\n" ref_count); \
+                 sub("<!-- WHITELIST_COUNT -->", "<!-- WHITELIST_COUNT -->\n" white_count); print }' README.md > README.tmp \
+          && mv README.tmp README.md
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update README with latest list counts"
+            git push
+          fi
