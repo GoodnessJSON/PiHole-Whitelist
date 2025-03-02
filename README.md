@@ -63,7 +63,9 @@ Want to report a new domain? Want to report an existing one? Feel free to file a
   </h3>
 </div>
 
-This is a fork of the original [anudeepND Whitelist](https://github.com/GoodnessJSON/PiHole-Whitelist)
+<div align="center">
+This is a fork of the original [anudeepND Whitelist](https://github.com/GoodnessJSON/PiHole-Whitelist). It's aim is to support PiHole V6 and be responsive to community requests.
+</div>
 
 &nbsp;
 
