@@ -225,6 +225,3 @@ stats.streamelements.com
 # Adobe licence verification endpoints
 lm.licenses.adobe.com
 activate.adobe.com
-
-# German DYDNS Service
-ipv64.net
