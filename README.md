@@ -64,7 +64,7 @@ Want to report a new domain? Want to report an existing one? Feel free to file a
 </div>
 
 <div align="center">
-This is a fork of the original <a href="https://github.com/GoodnessJSON/PiHole-Whitelist">anudeepND Whitelist</a>.</br>
+This is a fork of the original <a href="https://github.com/anudeepND/whitelist">anudeepND Whitelist</a>.</br>
 It's aim is to support PiHole V6 and be responsive to community requests.
 </div>
 
@@ -138,6 +138,7 @@ SOFTWARE.
 
 ```Text
 MIT License - Original Fork
+Original License - https://github.com/anudeepND/whitelist
 
 Copyright (c) 2020 Anudeep ND <anudeep@protonmail.com>
 
