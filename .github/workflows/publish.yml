@@ -36,9 +36,9 @@ jobs:
 
       - name: Update README
         run: |
-          sed -i "s/<!-- OPTIONAL_LIST_COUNT -->.*<!-- OPTIONAL_LIST_COUNT_END -->/<!-- OPTIONAL_LIST_COUNT -->$OPTIONAL_COUNT<!-- OPTIONAL_LIST_COUNT_END -->/" README.md
-          sed -i "s/<!-- REFERRAL_SITES_COUNT -->.*<!-- REFERRAL_SITES_COUNT_END -->/<!-- REFERRAL_SITES_COUNT -->$REFERRAL_COUNT<!-- REFERRAL_SITES_COUNT_END -->/" README.md
-          sed -i "s/<!-- WHITELIST_COUNT -->.*<!-- WHITELIST_COUNT_END -->/<!-- WHITELIST_COUNT -->$WHITELIST_COUNT<!-- WHITELIST_COUNT_END -->/" README.md
+          sed -i "s/<!-- OPTIONAL_LIST_COUNT -->.*\?<!-- OPTIONAL_LIST_COUNT_END -->/<!-- OPTIONAL_LIST_COUNT -->$OPTIONAL_COUNT<!-- OPTIONAL_LIST_COUNT_END -->/" README.md
+          sed -i "s/<!-- REFERRAL_SITES_COUNT -->.*\?<!-- REFERRAL_SITES_COUNT_END -->/<!-- REFERRAL_SITES_COUNT -->$REFERRAL_COUNT<!-- REFERRAL_SITES_COUNT_END -->/" README.md
+          sed -i "s/<!-- WHITELIST_COUNT -->.*\?<!-- WHITELIST_COUNT_END -->/<!-- WHITELIST_COUNT -->$WHITELIST_COUNT<!-- WHITELIST_COUNT_END -->/" README.md
 
       - name: Commit and Push Changes
         run: |
