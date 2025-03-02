@@ -39,9 +39,9 @@ jobs:
           awk -v opt_count="$OPTIONAL_COUNT" \
               -v ref_count="$REFERRAL_COUNT" \
               -v white_count="$WHITELIST_COUNT" \
-              '{ sub("<!-- OPTIONAL_LIST_COUNT -->", "<!-- OPTIONAL_LIST_COUNT -->\n" opt_count); \
-                 sub("<!-- REFERRAL_SITES_COUNT -->", "<!-- REFERRAL_SITES_COUNT -->\n" ref_count); \
-                 sub("<!-- WHITELIST_COUNT -->", "<!-- WHITELIST_COUNT -->\n" white_count); print }' README.md > README.tmp \
+              '{ sub("<!-- OPTIONAL_LIST_COUNT -->", "<!-- OPTIONAL_LIST_COUNT -->" opt_count); \
+                 sub("<!-- REFERRAL_SITES_COUNT -->", "<!-- REFERRAL_SITES_COUNT -->" ref_count); \
+                 sub("<!-- WHITELIST_COUNT -->", "<!-- WHITELIST_COUNT -->" white_count); print }' README.md > README.tmp \
           && mv README.tmp README.md
 
       - name: Commit and Push Changes
