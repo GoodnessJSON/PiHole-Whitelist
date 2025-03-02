@@ -83,7 +83,7 @@ It's aim is to support PiHole V6 and be responsive to community requests.
 - New domains are added frequently.
 - Can be easily imported as an 'allow list' with PiHole V6.
 - Domains are categorized and are included in 3 different files.
-- Domains are categorised to explain why they have been whitelisted.
+- Domains have explanations to explain why they have been whitelisted.
 - If you are a beginner to Pi-Hole, adding these sites will solve issues with host files that block legitimate websites.
 
 ## <ins>Installation (PiHole v6)</ins>
