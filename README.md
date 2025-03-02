@@ -27,9 +27,6 @@
   <a href="https://github.com/GoodnessJSON/PiHole-Whitelist/graphs/contributors" > 
     <img src="https://img.shields.io/github/contributors/GoodnessJSON/PiHole-Whitelist?label=Contributors&color=yellow" alt="contributors" >
   <a/>
-  <a href="https://github.com/GoodnessJSON/PiHole-Whitelist/blob/master/LICENSE" > 
-    <img src="https://img.shields.io/github/license/GoodnessJSON/PiHole-Whitelist?label=License&color=blueviolet" alt="license" >
-  <a/>
 </div>
     
 <div align="center">
@@ -115,7 +112,7 @@ It's aim is to support PiHole V6 and be responsive to community requests.
 ```Text
 MIT License - This repository
 
-Copyright (c) 2025
+Copyright (c) 2025 GoodnessJSON
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
