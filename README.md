@@ -45,8 +45,6 @@ To keep this list as up to date as possible, PRs and domain suggestions are welc
 
 Want to report a new domain? Want to report an existing one? Feel free to file an [issue](https://github.com/GoodnessJSON/PiHole-Whitelist/issues).
 
-This is a fork of the original [anudeepND Whitelist](https://github.com/GoodnessJSON/PiHole-Whitelist)
-
 </div>
 
 <div align="center">
@@ -63,7 +61,10 @@ This is a fork of the original [anudeepND Whitelist](https://github.com/Goodness
       Submit PR
     </a>
   </h3>
-</div>       
+</div>
+
+This is a fork of the original [anudeepND Whitelist](https://github.com/GoodnessJSON/PiHole-Whitelist)
+
 &nbsp;
 
 ## <ins>Table of contents</ins>
