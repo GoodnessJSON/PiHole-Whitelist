@@ -197,3 +197,6 @@ www.msftconnecttest.com
 
 # German DYDNS Service
 ipv64.net
+
+# Discord cdn# 
+cdn.discordapp.com
