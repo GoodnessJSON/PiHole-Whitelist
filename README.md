@@ -36,7 +36,7 @@
 </div>
 <div align="center">
   
-This repository hosts open-source, robust and vetted community whitelists for use with PiHole V6.
+This repository hosts open-source, robust and vetted community whitelists for use with Pi-Hole V6.
 
 To keep this list as up to date as possible, PRs and domain suggestions are welcome and will try and be quickly resolved. Please see below for info.
 
@@ -62,7 +62,7 @@ Want to report a new domain? Want to report an existing one? Feel free to file a
 
 <div align="center">
 This is a fork of the original <a href="https://github.com/anudeepND/whitelist">anudeepND Whitelist</a>.</br>
-It's aim is to support PiHole V6 and be responsive to community requests.
+It's aim is to support Pi-Hole V6 and be responsive to community requests.
 </div>
 
 &nbsp;
@@ -71,7 +71,7 @@ It's aim is to support PiHole V6 and be responsive to community requests.
 - [Features](#features)
 - [Whitelist Uses](#why-do-i-need-an-allow-list)
 - [List Criteria](#what-is-your-criteria-for-allowing-items-in-the-whitelist)
-- [Installation](#installation-pihole-v6)
+- [Installation](#installation-pi-hole-v6)
 - [Overview](#overview)
 - [How do I determine an ad domain?](#how-do-i-determine-an-ad-domain)
 - [License ](#license)
@@ -84,10 +84,11 @@ It's aim is to support PiHole V6 and be responsive to community requests.
 - Lists can be easily imported as an 'allow list' with PiHole V6.
 - Domains are categorized and are included in 3 different files (see below).
 - If you are a beginner to Pi-Hole, adding these sites will solve issues with host files that block legitimate websites.
+- Supported by Pi-Hole and Adguard Home
 
 ## <ins>Why do I need an allow list?</ins>
 
-A community curated wgitelist can be useful in situations where you run large blocklists above and beyond the standard lists. These may cause protection may over-match and cause certain services (such as Google, Apple) to not work.
+A community curated whitelist can be useful in situations where you run large blocklists above and beyond the standard lists. These may result in over-matching, and cause certain services (such as Google, Apple) to not work.
 
 Furthermore, you may like to have a slightly more 'permissive' network and run some of these optional lists, such as if you have users on your network who might otherwise be frustrated by restrictive lists.
 
@@ -101,9 +102,9 @@ While this is being refined, this is the current criteria:
 4. The impact of blacklisting the domain is sufficient to warrant whitelisting. Minor impacts will not be considered.
 5. There are no significant privacy, telemetry or ad-blocking impacts of whitelisting the domain.
 
-## <ins>Installation (PiHole v6)</ins>
+## <ins>Installation (Pi-Hole v6)</ins>
 
-1. Open your PiHole Instance
+1. Open your Pi-Hole Instance
 2. Click on Lists
 3. Enter in the link to the correct Whitelist (see below) into the Address box
 4. Click 'Add Allowlist'
@@ -119,7 +120,7 @@ While this is being refined, this is the current criteria:
 | optional-list.txt | <!-- OPTIONAL_LIST_COUNT -->145<!-- OPTIONAL_LIST_COUNT_END --> | This file contain domains that are needed to be whitelisted depending on the service you use. It may contain some tracking site but sometimes it's necessary to add bad domains to make a few services to work. | Occasionally | [link](https://raw.githubusercontent.com/GoodnessJSON/PiHole-Whitelist/master/lists/optional-list.txt) |
 
 ## <ins>How do I determine an ad domain?</ins>
-- __Using PiHole:__ <a href="https://discourse.pi-hole.net/t/how-do-i-determine-what-domain-an-ad-is-coming-from/1522">Follow the official PiHole instructions</a> for identifying a problematic domain.
+- __Using PiHole:__ <a href="https://discourse.pi-hole.net/t/how-do-i-determine-what-domain-an-ad-is-coming-from/1522">Follow the official Pi-Hole instructions</a> for identifying a problematic domain.
 - __Adam:ONE Assistant (formerly DNSthingy Assistant):__ <a href="https://chrome.google.com/webstore/detail/adamone-assistant/fdmpekabnlekabjlimjkfmdjajnddgpc">This browser extension</a> will list all of the domains that are queried when a web page is loaded. You can often look at the list of domains and cherry pick the ones that appear to be ad-serving domains.
 - __Using inbuilt Developer tool:__ For Chrome and Firefox, __`ctrl+shift+I`__ will land you in Developer tools menu.
 - __Using an Android app:__ [__`Net Guard`__](https://play.google.com/store/apps/details?id=eu.faircode.netguard) is an Android app that can be used to monitor any specific apps, works on unrooted devices too.
