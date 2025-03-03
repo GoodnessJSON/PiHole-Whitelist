@@ -69,6 +69,8 @@ It's aim is to support PiHole V6 and be responsive to community requests.
 
 ## <ins>Table of contents</ins>
 - [Features](#features)
+- [Whitelist Uses](#why-do-i-need-an-allow-list)
+- [List Criteria](#what-is-your-criteria-for-allowing-items-in-the-whitelist)
 - [Installation](#installation-pihole-v6)
 - [Overview](#overview)
 - [How do I determine an ad domain?](#how-do-i-determine-an-ad-domain)
