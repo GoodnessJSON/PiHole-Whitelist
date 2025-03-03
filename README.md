@@ -1,5 +1,5 @@
 <div align="center">  
-  <img width="550" alt="Whitelist logo" src="https://raw.githubusercontent.com/GoodnessJSON/PiHole-Whitelist/master/images/logo_new3.png">
+  <img width="550" alt="Whitelist logo" src="https://raw.githubusercontent.com/GoodnessJSON/PiHole-Whitelist/master/images/logo_new4.png">
 </div>
 
 <br />
@@ -76,12 +76,28 @@ It's aim is to support PiHole V6 and be responsive to community requests.
 
 ## <ins>Features</ins>
 
-- The entire repo is curated.
+- All lists are curated and domains must have a robust explanation of why they are required, and why they break website functionality.
+- No domains in 'whitelist.txt' may be used for Ad-blocking or tracking.
 - New domains are added frequently.
-- Can be easily imported as an 'allow list' with PiHole V6.
-- Domains are categorized and are included in 3 different files.
-- Domains have explanations to explain why they have been whitelisted.
+- Lists can be easily imported as an 'allow list' with PiHole V6.
+- Domains are categorized and are included in 3 different files (see below).
 - If you are a beginner to Pi-Hole, adding these sites will solve issues with host files that block legitimate websites.
+
+## <ins>Why do I need an allow list?</ins>
+
+A community curated wgitelist can be useful in situations where you run large blocklists above and beyond the standard lists. These may cause protection may over-match and cause certain services (such as Google, Apple) to not work.
+
+Furthermore, you may like to have a slightly more 'permissive' network and run some of these optional lists, such as if you have users on your network who might otherwise be frustrated by restrictive lists.
+
+## <ins>What is your criteria for allowing items in the Whitelist?</ins>
+
+While this is being refined, this is the current criteria:
+
+1. The domain *must* break or reduce functionality of the website being visited.
+2. In the main whitelist, no ad-tracking or telemetry domains are allowed.
+3. The domain must have an age greater than 2 years.
+4. The impact of blacklisting the domain is sufficient to warrant whitelisting. Minor impacts will not be considered.
+5. There are no significant privacy, telemetry or ad-blocking impacts of whitelisting the domain.
 
 ## <ins>Installation (PiHole v6)</ins>
 
@@ -98,7 +114,7 @@ It's aim is to support PiHole V6 and be responsive to community requests.
 |:-:|:-:|:-:|:-:|:-:|
 | whitelist.txt | <!-- WHITELIST_COUNT -->193<!-- WHITELIST_COUNT_END --> | This file contain domains that are __safe__ to whitelist i.e. it does not contain any tracking or advertising sites. Adding this file fixes many problems like YouTube watch history, videos on news sites and so on. If you want to report additional domain feel free to file an [issue](https://github.com/GoodnessJSON/PiHole-Whitelist/issues). | Occasionally | [link](https://raw.githubusercontent.com/GoodnessJSON/PiHole-Whitelist/master/lists/whitelist.txt) |
 | referral-sites.txt | <!-- REFERRAL_SITES_COUNT -->77<!-- REFERRAL_SITES_COUNT_END --> | People who use services like Slickdeals and Fatwallet needs a few sites (most of  them are either trackers or ads) to be whitelisted to work properly. This file contains some analytics and ad serving sites like __doubleclick.net__ and others. __If you don't know what these services are, stay away from this list.__ | Occasionally | [link](https://raw.githubusercontent.com/GoodnessJSON/PiHole-Whitelist/master/lists/referral-sites.txt) |
-| optional-list.txt | <!-- OPTIONAL_LIST_COUNT -->145<!-- OPTIONAL_LIST_COUNT_END --> | This file contain domains that are needed to be whitelisted depending on the service you use. It may contain some tracking site but sometimes it's necessary to add bad domains to make a few services to work. Currently there is no script for this list, you have to add domains manually to your Pi-Hole. | Occasionally | [link](https://raw.githubusercontent.com/GoodnessJSON/PiHole-Whitelist/master/lists/optional-list.txt) |
+| optional-list.txt | <!-- OPTIONAL_LIST_COUNT -->145<!-- OPTIONAL_LIST_COUNT_END --> | This file contain domains that are needed to be whitelisted depending on the service you use. It may contain some tracking site but sometimes it's necessary to add bad domains to make a few services to work. | Occasionally | [link](https://raw.githubusercontent.com/GoodnessJSON/PiHole-Whitelist/master/lists/optional-list.txt) |
 
 ## <ins>How do I determine an ad domain?</ins>
 - __Using PiHole:__ <a href="https://discourse.pi-hole.net/t/how-do-i-determine-what-domain-an-ad-is-coming-from/1522">Follow the official PiHole instructions</a> for identifying a problematic domain.
