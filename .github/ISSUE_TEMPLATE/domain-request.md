@@ -10,6 +10,9 @@ assignees: GoodnessJSON
 **What is the domain you want to whitelist?**
 example.domain.org
 
+**What webpage is broken by this domain being blocked?**
+domain.org
+
 **Why should this domain be whitelisted?**
 A clear and concise description of why this domain should be whitelisted and is necessary. 
 
