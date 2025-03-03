@@ -201,3 +201,6 @@ ipv64.net
 
 # Discord cdn# 
 cdn.discordapp.com
+
+# Bunnings: Required for authorisation and login
+authorisation.api.bunnings.com.au
