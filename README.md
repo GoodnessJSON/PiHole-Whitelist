@@ -90,7 +90,7 @@ It's aim is to support Pi-Hole V6 and be responsive to community requests.
 
 A community curated whitelist can be useful in situations where you run large blocklists above and beyond the standard lists. These may result in over-matching, and cause certain services (such as Google, Apple) to not work.
 
-Furthermore, you may like to have a slightly more 'permissive' network and run some of these optional lists, such as if you have users on your network who might otherwise be frustrated by restrictive lists.
+Furthermore, you may like to have a slightly more 'permissive' network and run either the optional or referral-sites list, such as if you have users on your network who might otherwise be frustrated by restrictive lists.
 
 ## <ins>What is your criteria for allowing items in the Whitelist?</ins>
 
